@@ -10,15 +10,15 @@ Official Code of the paper "Beyond Text: Frozen Large Language Models in Visual 
 The proposed V2L Tokenizer can be trained with the following steps (Run.sh):
 
 1. Confirming "$imagenet_path" is set as the folder of ImageNet1K dataset that has been arranged with following layout:
-|-ImageNet1K
-|   |--train
-|   |   |---n01440764
-|   |   |---n01443537
-|   |   |---...
-|   |--val
-|   |   |---n01440764
-|   |   |---n01443537
-|   |   |---...
+     <br/>|--ImageNet1K
+     <br/>    |--train
+     <br/>    |   |---n01440764
+     <br/>    |   |---01443537
+     <br/>    |   |---...
+     <br/>    |--val
+     <br/>    |    |--ILSVRC2012_val_00000001.JPEG
+     <br/>    |    |--ILSVRC2012_val_00000002.JPEG
+     <br/>    |    |--....
 
 2. Confirming "$llama_path" is set as the folder of LLaMA-2 model, containing its original model weight and tokenizer.
 
