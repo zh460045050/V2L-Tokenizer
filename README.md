@@ -30,6 +30,8 @@ The proposed V2L Tokenizer can be trained with the following steps (Run.sh):
 
 6. Run "step4_training_v2l_tokenizer.py" to train the V2L Tokenizer based on the codebook produced by the above 3 steps.
 
+We also provided our codebooks and checkpoints at: https://drive.google.com/drive/folders/1Z8GxE-WMEijJV-JZmqL7AGzsB0gHk4ow?usp=sharing
+
 
 ### Validation
 * * * 
