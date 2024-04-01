@@ -130,9 +130,10 @@ class MiniImageNetDataset(Dataset):
         
         ##The last image serves query image (GT)
         target_texts = select_texts[-1]
+        select_texts = select_texts[:-1]
 
         ##Generating context examples with other images
-        for i in range(0, args.repeat+1):
+        for j in range(0, args.repeat+1):
             for i in range(0, len(select_texts)):
                 
                 text_token = torch.tensor(self.text_tokenizer.encode(select_texts[i], bos=False, eos=False), dtype=torch.int64).to(self.device).unsqueeze(0)
